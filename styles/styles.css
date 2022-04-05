@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #000;
+    position: relative;
+    color: white;
+}
+
+.wrapContent{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.avisoSom {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    margin-top: 3vh;
+}
+
+.headline {
+    text-align: center;
+    margin: 20px;
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-top: 5vh;
+}
+
+.headline b {
+    color: #c7af79;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.video {
+    max-width: 100%;
+    margin: 45px;
+}
+
+.passoAPasso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.passos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.passo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    margin: 5%;
+}
+
+.presentesEExtra {
+    margin-top: 15vh;
+}
+
+.presentes {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.presente {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    text-align: justify;
+}
+
+
+.recebendo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.recebendo div {
+    width: 50%;
+}
+
+.notebook {
+    width: 15%;
+}
+
+.garantia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.garantia :nth-child(3) {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.seloGarantia {
+    width: 15%;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoProf {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagemEDescricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.imagem h4 {
+    color: #c7af79;
+}
+
+.descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.descricao p {
+    margin: 8%;
+}
+
+.autoridade {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #625040;
+    color: #c7af79;
+    height: 60px;
+    width: 300px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgb(255, 255, 255, 0.2);
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socialNetworks b {
+    font-size: larger;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #7c7c7c;
+    height: 50px;
+    margin-top: 50px;
+}
+
+footer label {
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    .headline {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width:700px) {
+    p {
+        padding: 5%;
+    }
+
+    .headline {
+        padding: 0;
+        margin-top: 2vh;
+    }
+
+    .subHeadline {
+        margin-left: 1%;
+        margin-right: 1%;
+        text-align: justify;
+    }
+
+    .video {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .garantia :nth-child(3) {
+        margin: 0;
+    }
+
+    .seloGarantia {
+        width: 40%;
+    }
+
+    .notebook {
+        width: 45%;
+    }
+
+    .recebendo {
+        flex-direction: column;
+    }
+
+    .recebendo div {
+        width: 100%;
+    }
+
+    .passos {
+        flex-direction: column;
+    }
+
+    .passo {
+        margin: 0px;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .presente {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .imagemEDescricao {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .imagem h4 {
+        color: #625040;
+        margin-top: 3%;
+    }
+
+    .infoProf {
+        margin-top: 10vh;
+    }
+
+    .autoridade {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .descricao {
+        width: 100%;
+    }
+
+    .descricao p {
+        margin: 0px;
+    }
+
+    footer {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
