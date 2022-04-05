@@ -19,11 +19,12 @@ body {
     color: white;
 }
 
-.wrapContent{
+.wrapContent {
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 img {
@@ -35,7 +36,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 p {
-    text-align: justify;
+    text-align: start;
 }
 
 .avisoSom {
@@ -59,17 +60,23 @@ p {
     color: #c7af79;
 }
 
+.subHeadline{
+    text-align: center;
+}
+
 iframe {
     max-width: 100%;
 }
 
 .video {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 43.25%;
     height: 0;
+    width: 80%;
+    margin-bottom: 5%;
 }
 
-.video iframe{
+.video iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -238,10 +245,15 @@ footer {
     background-color: #7c7c7c;
     height: 50px;
     margin-top: 50px;
+    position: absolute;
+    bottom: 0px;
+    clear: both;
 }
 
-footer label {
+footer p {
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width:900px) {
@@ -269,7 +281,9 @@ footer label {
 
     .video {
         max-width: 100%;
-        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
     }
 
     .garantia :nth-child(3) {

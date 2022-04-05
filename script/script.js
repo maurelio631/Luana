@@ -9,7 +9,7 @@ function comprar() {
 function delay() {
     setTimeout(() => {
         conteudoEscondido.style.display = "flex"
-    },1200000)
+    },10000)
 }
 
 delay();
