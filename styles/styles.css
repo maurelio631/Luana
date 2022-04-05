@@ -64,6 +64,10 @@ p {
     text-align: center;
 }
 
+.subHeadline b {
+    margin-right: 10px;
+}
+
 iframe {
     max-width: 100%;
 }
