@@ -8,7 +8,7 @@ function comprar() {
 function delay() {
   setTimeout(() => {
     conteudoEscondido.style.display = "flex";
-  }, 3000);
+  }, 1200000);
 }
 
 function checkLocalStorage() {
