@@ -1,4 +1,5 @@
 const conteudoEscondido = document.getElementById("wrapContent");
+var ls = localStorage.getItem("namespace.visited");
 
 function comprar() {
   window.open("https://pay.kiwify.com.br/DFdM6CV", "_blank");
@@ -7,13 +8,13 @@ function comprar() {
 function delay() {
   setTimeout(() => {
     conteudoEscondido.style.display = "flex";
-  }, 1200000);
+  }, 3000);
 }
 
 function checkLocalStorage() {
-  if (localStorage == null) {
-    localStorage.setItem("visited", "yes");
+  if (ls == null) {
     delay();
+    localStorage.setItem("namespace.visited", 1);
   } else {
     conteudoEscondido.style.display = "flex";
   }
